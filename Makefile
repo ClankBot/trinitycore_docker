@@ -29,6 +29,8 @@ WORLDSERVER_SOAP_IP = 0.0.0.0
 # Location of WoW game client files, used to generate worldserver map data.
 GAME_CLIENT = World_of_Warcraft
 
+
+
 # Package type to build for map data. (Optional step).
 PKG_TYPE = deb
 
@@ -70,9 +72,9 @@ MPQ_DATA_ARTIFACTS = $(ARTIFACTS)/$(MPQ_DATA_DIR)
 # MPQ game data files use to generate the worldserver map data.
 MPQ = $(addprefix $(GAME_CLIENT)/Data/, $(addsuffix .MPQ, \
 	common expansion patch-3 patch-2 patch common-2 lichking \
-	enUS/lichking-speech-enUS enUS/expansion-speech-enUS enUS/lichking-locale-enUS \
-	enUS/expansion-locale-enUS enUS/base-enUS enUS/patch-enUS-2 enUS/backup-enUS \
-	enUS/speech-enUS enUS/patch-enUS-3 enUS/patch-enUS enUS/locale-enUS ) )
+	enGB/lichking-speech-enGB enGB/expansion-speech-enGB enGB/lichking-locale-enGB \
+	enGB/expansion-locale-enGB enGB/base-enGB enGB/patch-enGB-2 enGB/backup-enGB \
+	enGB/speech-enGB enGB/patch-enGB-3 enGB/patch-enGB enGB/locale-enGB ) )
 
 # TrinityCore binary and config files.
 TOOLS = mapextractor mmaps_generator vmap4assembler vmap4extractor
